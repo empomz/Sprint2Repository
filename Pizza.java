@@ -1,6 +1,6 @@
 public class Pizza {
 
-    private String name;
+    private String itemName;
     private double price;
     private String size;
     private String crust;
