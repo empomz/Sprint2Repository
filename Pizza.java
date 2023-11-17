@@ -12,7 +12,7 @@ public class Pizza {
 
     public Pizza(String name, double price, String size, String crust, String[] toppings){
 
-        this.name = name;
+        this.itemName = name;
         this.price = price;
         this.size = size;
         this.crust = crust;
