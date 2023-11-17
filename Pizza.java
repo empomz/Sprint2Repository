@@ -1,6 +1,6 @@
 public class Pizza {
 
-    private String itemName;
+    private String name;
     private double price;
     private String size;
     private String crust;
@@ -12,7 +12,7 @@ public class Pizza {
 
     public Pizza(String name, double price, String size, String crust, String[] toppings){
 
-        this.itemName = name;
+        this.name = name;
         this.price = price;
         this.size = size;
         this.crust = crust;
