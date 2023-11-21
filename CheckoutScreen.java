@@ -5,6 +5,16 @@ public class CheckoutScreen extends JFrame {
     private JRadioButton cardRadioButton;
     private JRadioButton cashCheckRadioButton;
     private JPanel checkoutPanel;
+    private JRadioButton cardDelivery;
+    private JRadioButton cardPickup;
+    private JTextField cardAddress1;
+    private JTextField cardAddress2;
+    private JTextField payAtTheShopTextField;
+    private JRadioButton cashDelivery;
+    private JRadioButton cashPickup;
+    private JTextField cashAddress1;
+    private JTextField cashAddress2;
+    private JTextField payAtTheShopTextField1;
 
     public CheckoutScreen() {
         setContentPane(checkoutPanel);
