@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="checkoutPanel" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1004" height="438"/>
+      <xy x="20" y="20" width="1004" height="575"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -18,7 +18,8 @@
           <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Heavitas" size="26" style="0"/>
+          <background color="-592917"/>
+          <font name="Heavitas" size="40" style="0"/>
           <selected value="true"/>
           <text value="Card"/>
         </properties>
@@ -33,6 +34,8 @@
           <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-592917"/>
+          <font name="Heavitas" size="40" style="0"/>
           <text value="Cash / Check"/>
         </properties>
       </component>
@@ -41,7 +44,9 @@
         <constraints>
           <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="3" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-592917"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="3fdc1" class="javax.swing.JRadioButton" binding="cashDelivery">
@@ -49,6 +54,10 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <autoscrolls value="false"/>
+              <background color="-592917"/>
+              <enabled value="false"/>
+              <font name="Heavitas" size="26" style="0"/>
               <text value="Delivery"/>
             </properties>
           </component>
@@ -57,6 +66,9 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-592917"/>
+              <enabled value="false"/>
+              <font name="Heavitas" size="26" style="0"/>
               <text value="Pickup"/>
             </properties>
           </component>
@@ -66,7 +78,10 @@
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <enabled value="false"/>
+              <font name="Heavitas" size="22" style="0"/>
+            </properties>
           </component>
           <component id="b9a30" class="javax.swing.JTextField" binding="cashAddress2">
             <constraints>
@@ -74,18 +89,24 @@
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <enabled value="false"/>
+              <font name="Heavitas" size="22" style="0"/>
+            </properties>
           </component>
-          <component id="9a6c4" class="javax.swing.JTextField" binding="payAtTheShopTextField1" default-binding="true">
+          <component id="9a6c4" class="javax.swing.JTextField" binding="payAtTheShopTextField2" default-binding="true">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-592917"/>
               <editable value="false"/>
+              <enabled value="false"/>
               <focusable value="false"/>
-              <text value="Pay at the shop"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <text value="-- Pay at the shop"/>
             </properties>
           </component>
         </children>
@@ -95,7 +116,9 @@
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="3" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-592917"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="c4ab6" class="javax.swing.JRadioButton" binding="cardDelivery">
@@ -103,6 +126,8 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-592917"/>
+              <font name="Heavitas" size="26" style="0"/>
               <text value="Delivery"/>
             </properties>
           </component>
@@ -111,6 +136,8 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-592917"/>
+              <font name="Heavitas" size="26" style="0"/>
               <text value="Pickup"/>
             </properties>
           </component>
@@ -121,6 +148,8 @@
               </grid>
             </constraints>
             <properties>
+              <font name="Heavitas" size="22" style="0"/>
+              <name value="Address Line 1"/>
               <toolTipText value=""/>
             </properties>
           </component>
@@ -131,10 +160,12 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-592917"/>
               <editable value="false"/>
               <enabled value="true"/>
               <focusable value="false"/>
-              <text value="Pay at the shop"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <text value="-- Pay at the shop"/>
             </properties>
           </component>
           <component id="e0237" class="javax.swing.JTextField" binding="cardAddress2">
@@ -143,7 +174,9 @@
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <font name="Heavitas" size="22" style="0"/>
+            </properties>
           </component>
         </children>
       </grid>
@@ -152,7 +185,11 @@
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <icon value="redButton.png"/>
+          <name value="Back to Order"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="1b9e1" class="javax.swing.JButton" binding="button1" default-binding="true">
@@ -183,17 +220,17 @@
     </children>
   </grid>
   <buttonGroups>
-    <group name="cardMethod">
+    <group name="cardMethod" bound="true">
       <member id="c4ab6"/>
       <member id="9d85d"/>
     </group>
-    <group name="cashMethod">
+    <group name="cashMethod" bound="true">
       <member id="3fdc1"/>
       <member id="3164"/>
     </group>
-    <group name="cashOrCard">
-      <member id="c2617"/>
+    <group name="cashOrCard" bound="true">
       <member id="4f68f"/>
+      <member id="c2617"/>
     </group>
   </buttonGroups>
 </form>
