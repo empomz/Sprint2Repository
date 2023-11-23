@@ -1,4 +1,4 @@
-public class Side {
+public class Side extends MenuItem{
 
     private String name;
     private double price;

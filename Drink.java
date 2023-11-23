@@ -1,4 +1,4 @@
-public class Drink {
+public class Drink extends MenuItem{
 
     private String name;
     private String size;

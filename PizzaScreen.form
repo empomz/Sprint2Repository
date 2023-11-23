@@ -1,231 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PizzaScreen">
-  <grid id="27dc6" binding="PizzaPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="windowPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="1331" height="592"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-592917"/>
+      <font name="Monospaced" size="36" style="1"/>
+      <foreground color="-16777216"/>
+    </properties>
     <border type="none"/>
     <children>
-      <grid id="19353" binding="itemTab" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
+      <tabbedpane id="ed852" binding="orderPanel">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-1754823"/>
+          <foreground color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
-          <component id="e3707" class="javax.swing.JButton" binding="button1" default-binding="true">
+          <grid id="d17ae" binding="pizzaTab" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="20" left="20" bottom="20" right="20"/>
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <tabbedpane title="Untitled"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <background color="-592917"/>
             </properties>
-          </component>
-          <component id="1cfc1" class="javax.swing.JButton" binding="button2" default-binding="true">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
-          <component id="5f24b" class="javax.swing.JButton" binding="button3" default-binding="true">
-            <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
+            <border type="none"/>
+            <children>
+              <grid id="6993" binding="orderTab" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="8c658" class="javax.swing.JLabel" binding="buildAPizzaLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <font name="Heavitas" size="60"/>
+                      <foreground color="-16777216"/>
+                      <text value="BUILD A PIZZA"/>
+                    </properties>
+                  </component>
+                  <component id="d808a" class="javax.swing.JButton" binding="orderButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-9381521"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Add to Order"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="cc61" binding="crustTab" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="7b82c" class="javax.swing.JLabel" binding="crustLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <font name="Heavitas" size="36"/>
+                      <foreground color="-16777216"/>
+                      <text value="CRUST"/>
+                    </properties>
+                  </component>
+                  <component id="5079d" class="javax.swing.JRadioButton" binding="thinCrustRadioButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-592917"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Thin"/>
+                    </properties>
+                  </component>
+                  <component id="ec9bd" class="javax.swing.JRadioButton" binding="regularRadioButton">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-592917"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Regular"/>
+                    </properties>
+                  </component>
+                  <component id="95d74" class="javax.swing.JRadioButton" binding="panRadioButton">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-592917"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Pan"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="54387" binding="toppingsLabelTab" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="8cee2" class="javax.swing.JLabel" binding="toppingsLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <font name="Heavitas" size="36"/>
+                      <foreground color="-16777216"/>
+                      <text value="TOPPINGS"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="66b54" binding="toppingsTab" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1754823"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="423ca" class="javax.swing.JRadioButton" binding="cheeseRadioButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Cheese"/>
+                    </properties>
+                  </component>
+                  <component id="6e661" class="javax.swing.JRadioButton" binding="pepperoniRadioButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Pepperoni"/>
+                    </properties>
+                  </component>
+                  <component id="159b1" class="javax.swing.JRadioButton" binding="sausageRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Sausage"/>
+                    </properties>
+                  </component>
+                  <component id="5174f" class="javax.swing.JRadioButton" binding="hamRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Ham"/>
+                    </properties>
+                  </component>
+                  <component id="c4da7" class="javax.swing.JRadioButton" binding="greenPepperRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Green Pepper"/>
+                    </properties>
+                  </component>
+                  <component id="126ca" class="javax.swing.JRadioButton" binding="onionRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Onion"/>
+                    </properties>
+                  </component>
+                  <component id="dacc3" class="javax.swing.JRadioButton" binding="tomatoRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Tomato"/>
+                    </properties>
+                  </component>
+                  <component id="4b7f8" class="javax.swing.JRadioButton" binding="mushroomRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Mushroom"/>
+                    </properties>
+                  </component>
+                  <component id="b78e6" class="javax.swing.JRadioButton" binding="pineappleRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1754823"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Pineapple"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="c2487" binding="sizePanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="69ae4" class="javax.swing.JLabel" binding="sizeLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <font name="Heavitas" size="36"/>
+                      <foreground color="-16777216"/>
+                      <text value="SIZE"/>
+                    </properties>
+                  </component>
+                  <component id="8a09" class="javax.swing.JRadioButton" binding="smallRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-592917"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Small"/>
+                    </properties>
+                  </component>
+                  <component id="db5be" class="javax.swing.JRadioButton" binding="mediumRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-592917"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Medium"/>
+                    </properties>
+                  </component>
+                  <component id="f5315" class="javax.swing.JRadioButton" binding="largeRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-592917"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Large"/>
+                    </properties>
+                  </component>
+                  <component id="d4d62" class="javax.swing.JRadioButton" binding="extraLargeRadioButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-592917"/>
+                      <font name="Heavitas" size="36" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Extra Large"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
         </children>
-      </grid>
-      <grid id="d17ae" binding="pizzaTab" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
-        <border type="none"/>
-        <children>
-          <grid id="6993" binding="orderTab" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <component id="8c658" class="javax.swing.JLabel" binding="pizzaLabel">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="PIZZA"/>
-                </properties>
-              </component>
-              <component id="d808a" class="javax.swing.JButton" binding="orderButton">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Add to Order"/>
-                </properties>
-              </component>
-            </children>
-          </grid>
-          <grid id="cc61" binding="crustTab" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <component id="7b82c" class="javax.swing.JLabel" binding="crustLabel">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="CRUST"/>
-                </properties>
-              </component>
-              <component id="5079d" class="javax.swing.JRadioButton" binding="thinCrustRadioButton">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Thin"/>
-                </properties>
-              </component>
-              <component id="ec9bd" class="javax.swing.JRadioButton" binding="regularRadioButton">
-                <constraints>
-                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Regular"/>
-                </properties>
-              </component>
-              <component id="95d74" class="javax.swing.JRadioButton" binding="panRadioButton">
-                <constraints>
-                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Pan"/>
-                </properties>
-              </component>
-            </children>
-          </grid>
-          <grid id="54387" binding="toppingsLabelTab" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <component id="8cee2" class="javax.swing.JLabel" binding="toppingsLabel">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="TOPPINGS"/>
-                </properties>
-              </component>
-            </children>
-          </grid>
-          <grid id="66b54" binding="toppingsTab" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
-            <constraints>
-              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <component id="fc8f1" class="javax.swing.JButton" binding="cheeseButton">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Cheese"/>
-                </properties>
-              </component>
-              <component id="e1a99" class="javax.swing.JButton" binding="pepperoniButton">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Pepperoni"/>
-                </properties>
-              </component>
-              <component id="3cc0e" class="javax.swing.JButton" binding="sausageButton" default-binding="true">
-                <constraints>
-                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Sausage"/>
-                </properties>
-              </component>
-              <component id="76b1a" class="javax.swing.JButton" binding="hamButton" default-binding="true">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Ham"/>
-                </properties>
-              </component>
-              <component id="2fd9c" class="javax.swing.JButton" binding="greenPepperButton" default-binding="true">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="GreenPepper"/>
-                </properties>
-              </component>
-              <component id="ba79b" class="javax.swing.JButton" binding="onionButton" default-binding="true">
-                <constraints>
-                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Onion"/>
-                </properties>
-              </component>
-              <component id="4da6b" class="javax.swing.JButton" binding="pineappleButton" default-binding="true">
-                <constraints>
-                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Pineapple"/>
-                </properties>
-              </component>
-              <component id="972d4" class="javax.swing.JButton" binding="mushroomButton" default-binding="true">
-                <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Mushroom"/>
-                </properties>
-              </component>
-              <component id="294c8" class="javax.swing.JButton" binding="tomatoButton" default-binding="true">
-                <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Tomato"/>
-                </properties>
-              </component>
-            </children>
-          </grid>
-        </children>
-      </grid>
+      </tabbedpane>
       <grid id="ed780" binding="checkoutTab" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
+        <margin top="20" left="20" bottom="20" right="20"/>
         <constraints>
-          <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-592917"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="2cbf4" class="javax.swing.JButton" binding="checkoutButton">
@@ -233,25 +344,154 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-9381521"/>
+              <font name="Heavitas" size="36"/>
+              <foreground color="-16777216"/>
               <text value="CHECKOUT"/>
             </properties>
           </component>
           <component id="5b12a" class="javax.swing.JLabel" binding="totalTable">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font name="Heavitas" size="36"/>
+              <foreground color="-16777216"/>
               <text value="TOTAL"/>
             </properties>
           </component>
-          <component id="a2488" class="javax.swing.JLabel" binding="orderContents">
+          <grid id="141f0" binding="orderContents" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value=""/>
+              <background color="-592917"/>
             </properties>
-          </component>
+            <border type="none"/>
+            <children>
+              <component id="cb40b" class="javax.swing.JTextArea" binding="order1Text">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                  <editable value="false"/>
+                  <font name="Monospaced" size="18" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <component id="dac39" class="javax.swing.JTextArea" binding="order2Text">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                  <editable value="false"/>
+                  <font name="Monospaced" size="18" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <component id="93267" class="javax.swing.JTextArea" binding="order3Text">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                  <editable value="false"/>
+                  <font name="Monospaced" size="18" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <component id="3c7e3" class="javax.swing.JTextArea" binding="order4Text">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                  <editable value="false"/>
+                  <font name="Monospaced" size="18" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <component id="249e0" class="javax.swing.JTextArea" binding="order5Text">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-592917"/>
+                  <editable value="false"/>
+                  <font name="Monospaced" size="18" style="1"/>
+                  <foreground color="-16777216"/>
+                </properties>
+              </component>
+              <component id="9b416" class="javax.swing.JButton" binding="x1">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1754823"/>
+                  <font name="Heavitas" size="26"/>
+                  <foreground color="-16777216"/>
+                  <text value="X"/>
+                </properties>
+              </component>
+              <component id="db574" class="javax.swing.JButton" binding="x2">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1754823"/>
+                  <font name="Heavitas" size="26"/>
+                  <foreground color="-16777216"/>
+                  <text value="X"/>
+                </properties>
+              </component>
+              <component id="fa6b5" class="javax.swing.JButton" binding="x3">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1754823"/>
+                  <font name="Heavitas" size="26"/>
+                  <foreground color="-16777216"/>
+                  <text value="X"/>
+                </properties>
+              </component>
+              <component id="bfb8a" class="javax.swing.JButton" binding="x4">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1754823"/>
+                  <font name="Heavitas" size="26"/>
+                  <foreground color="-16777216"/>
+                  <text value="X"/>
+                </properties>
+              </component>
+              <component id="3bdc3" class="javax.swing.JButton" binding="x5">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1754823"/>
+                  <font name="Heavitas" size="26"/>
+                  <foreground color="-16777216"/>
+                  <text value="X"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
         </children>
       </grid>
     </children>
