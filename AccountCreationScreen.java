@@ -35,6 +35,7 @@ public class AccountCreationScreen extends JFrame{
 
 
 
+
     public AccountCreationScreen(){
 
         setState(JFrame.MAXIMIZED_BOTH);
@@ -43,6 +44,8 @@ public class AccountCreationScreen extends JFrame{
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(550, 330);
         setLocationRelativeTo(null);
+
+
         setVisible(true);
 
         double width = windowPanel.getWidth();
@@ -58,58 +61,36 @@ public class AccountCreationScreen extends JFrame{
             public void actionPerformed(ActionEvent e) {
 
 
-                fullName.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        newName = fullName.getText();
-                    }
-                });
+                newName=fullName.getText();
 
-                password.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
+                newPassword = password.getText();
 
-                        newPassword = password.getText();
+                newUsername = username.getText();
 
-                    }
-                });
+                newAddress = emailAddress.getText();
 
-                username.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        newUsername = username.getText();
-                    }
-                });
+                newPhoneNumber = phoneNumber.getText();
 
-                emailAddress.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        newAddress = emailAddress.getText();
-                    }
-                });
+                newCardInfo = CardNumber.getText() + ", " + SecurityCode.getText() + ", " + zipCode.getText();
 
-                phoneNumber.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        newPhoneNumber = phoneNumber.getText();
-                    }
-                });
 
-                CardNumber.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        newCardInfo = CardNumber.getText();
-                    }
-                });
 
-            Customer newCustomer = new Customer(newName,newUsername,newPassword,newAddress,newPhoneNumber,newCardInfo);
+
+                Customer newCustomer = new Customer(newName, newUsername, newPassword, newAddress, newPhoneNumber, newCardInfo);
+
+                System.out.print(newName);
             try {
                 FileWriter myWriter = new FileWriter("CustomerInfo.txt");
                 myWriter.write(newCustomer.getName());
+                myWriter.write(", ");
                 myWriter.write(newCustomer.getUsername());
+                myWriter.write(", ");
                 myWriter.write(newCustomer.getPassword());
+                myWriter.write(", ");
                 myWriter.write(newCustomer.getPhoneNumber());
+                myWriter.write(", ");
                 myWriter.write(newCustomer.getCardInfo());
+                myWriter.write("\n");
                 myWriter.close();
             } catch (IOException a){
                 System.out.println("An error occured.");
@@ -121,13 +102,10 @@ public class AccountCreationScreen extends JFrame{
                 LoginScreen myLoginScreen = new LoginScreen();
             }
 
+
             }
-
-
-
-
-
         });
+
     }
     public static void main(String[] args){
 
