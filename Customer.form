@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Customer">
+  <grid id="27dc6" binding="CustomerForm" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1647" height="992"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="7424b" class="javax.swing.JButton" binding="crushButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="crush2.png"/>
+          <text value="Crush"/>
+        </properties>
+      </component>
+      <component id="f0398" class="javax.swing.JButton" binding="drinksButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1754823"/>
+          <enabled value="true"/>
+          <font name="Heavitas" size="36" style="0"/>
+          <foreground color="-15460841"/>
+          <text value="Drinks"/>
+        </properties>
+      </component>
+      <component id="c6e59" class="javax.swing.JButton" binding="orderButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9381521"/>
+          <font name="Heavitas" size="36" style="0"/>
+          <foreground color="-15460841"/>
+          <text value="Order"/>
+        </properties>
+      </component>
+      <component id="8dc78" class="javax.swing.JButton" binding="sidesButton">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1754823"/>
+          <enabled value="true"/>
+          <font name="Heavitas" size="36" style="0"/>
+          <foreground color="-15460841"/>
+          <text value="Sides"/>
+        </properties>
+      </component>
+      <component id="a7af0" class="javax.swing.JLabel" binding="Items">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Items                 Cost"/>
+        </properties>
+      </component>
+      <component id="a8faf" class="javax.swing.JButton" binding="pepsiButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="Pepsi2.png"/>
+          <text value="Pepsi"/>
+        </properties>
+      </component>
+      <component id="58c9e" class="javax.swing.JButton" binding="dietPepsiButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="DietPepsi2.png"/>
+          <text value="Diet Pepsi"/>
+        </properties>
+      </component>
+      <component id="88929" class="javax.swing.JButton" binding="mugButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="Mug.png"/>
+          <text value="Mug"/>
+        </properties>
+      </component>
+      <component id="721cb" class="javax.swing.JButton" binding="dietCrushButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="dietCrush.png"/>
+          <text value="Diet Crush"/>
+        </properties>
+      </component>
+      <component id="743e2" class="javax.swing.JButton" binding="dietMugButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="dietMug.png"/>
+          <text value="Diet Mug"/>
+        </properties>
+      </component>
+      <component id="ac35f" class="javax.swing.JButton" binding="tropicanaLemonadeButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="Tropicana.png"/>
+          <text value="Tropicana Lemonade"/>
+        </properties>
+      </component>
+      <component id="e1e1" class="javax.swing.JButton" binding="starryButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="Starry.png"/>
+          <text value="Starry"/>
+        </properties>
+      </component>
+      <component id="d424c" class="javax.swing.JList" binding="list1" default-binding="true">
+        <constraints>
+          <grid row="2" column="3" row-span="2" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model/>
+        </properties>
+      </component>
+      <component id="8a9fa" class="javax.swing.JButton" binding="Checkout">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9381521"/>
+          <font name="Heavitas" size="36" style="0"/>
+          <foreground color="-15460841"/>
+          <text value="Checkout"/>
+        </properties>
+      </component>
+      <component id="20c13" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Size:"/>
+            <item value="Small"/>
+            <item value="Medium"/>
+            <item value="Large"/>
+          </model>
+        </properties>
+      </component>
+      <component id="ab766" class="javax.swing.JLabel" binding="Total">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Total"/>
+        </properties>
+      </component>
+      <component id="4032c" class="javax.swing.JButton" binding="xButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-1754823"/>
+          <text value="X"/>
+        </properties>
+      </component>
+      <component id="ce0f8" class="javax.swing.JButton" binding="pizzaButton">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1754823"/>
+          <enabled value="true"/>
+          <font name="Heavitas" size="36" style="0"/>
+          <foreground color="-15460841"/>
+          <text value="Pizza"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
