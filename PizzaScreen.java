@@ -1,17 +1,14 @@
 import javax.swing.*;
-import javax.swing.text.Style;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.text.DecimalFormat;
-import java.util.List;
 import java.awt.font.*;
+import java.util.List;
+import java.text.DecimalFormat;
 
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
-
-public class PizzaScreen{
+public class PizzaScreen extends JFrame {
     String size = "Small";
     String crust = "Thin Crust";
     public ArrayList<String> toppings = new ArrayList<>();
@@ -65,30 +62,20 @@ public class PizzaScreen{
 
 
     public PizzaScreen(){
-        JFrame frame = new JFrame("Pizza App");
-        frame.setState(JFrame.MAXIMIZED_BOTH);
-        frame.setContentPane(windowPanel);
-        frame.setTitle("Test");
-        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setSize(550,300);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-        JTabbedPane tabbedPane = new JTabbedPane();
-
-        JPanel pizzaBuilderPanel = new JPanel();
-        pizzaBuilderPanel.setLayout(new BorderLayout());
-        pizzaBuilderPanel.add(new JLabel("Pizza Builder Content"));
-        tabbedPane.addTab("Pizza Builder", null, pizzaBuilderPanel, "Build your pizza");
-
-        PizzaOrderAppPanel pizzaOrderAppPanel = new PizzaOrderAppPanel();
-        tabbedPane.addTab("Order App", null, pizzaOrderAppPanel, "Manage your orders");
+        setState(JFrame.MAXIMIZED_BOTH);
+        setContentPane(windowPanel);
+        setTitle("Test");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(550,300);
+        setLocationRelativeTo(null);
+        setVisible(true);
 
         double width = windowPanel.getWidth();
         double height = windowPanel.getHeight();
 
         Font font = new Font("Plain", Font.PLAIN, (int)width/25);
 
-        frame.setMinimumSize(new Dimension(1920, 1080));
+        setMinimumSize(new Dimension(1920, 1080));
 
         crustGroup.add(thinCrustRadioButton);
         crustGroup.add(regularRadioButton);
@@ -259,7 +246,8 @@ public class PizzaScreen{
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new PizzaScreen());
+        new PizzaScreen();
+        SwingUtilities.invokeLater(PizzaOrderApp::createAndShowGUI);
     }
 
     public void toppingProcess(JRadioButton button, String topping){
@@ -279,8 +267,6 @@ public class PizzaScreen{
         order5Text.setText(orderName(4));
     }
 
-
-
     public String orderName(int i){
         String name = "";
         if(OrderControl.order.getAt(i) != null){
@@ -289,15 +275,6 @@ public class PizzaScreen{
         return name;
     }
 }
-//miina code below
-
-class PizzaOrderAppPanel extends JPanel {
-    public PizzaOrderAppPanel(){
-        setLayout (new BorderLayout());
-        PizzaOrderApp.createAndShowGUI(this);
-    }
-}
-
 class PizzaOrderApp {
     private static final int screenWidth = 1920;
     private static final int screenHeight = 1080;
@@ -318,10 +295,15 @@ class PizzaOrderApp {
     private static JLabel orderDisplayLabel;
     private static JLabel totalLabel;
 
-    static void createAndShowGUI(PizzaOrderAppPanel pizzaOrderAppPanel) {
+
+    //public static void main(String[] args) {
+        //SwingUtilities.invokeLater(PizzaOrderApp::createAndShowGUI);
+    //}
+
+    static void createAndShowGUI() {
         JFrame frame = new JFrame("Pizza Order App");
         frame.setSize(screenWidth, screenHeight);
-        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel contentPane = new JPanel() {
             @Override
