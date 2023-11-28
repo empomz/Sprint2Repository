@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CheckoutScreen">
+  <grid id="27dc6" binding="checkoutPanel" layout-manager="GridLayoutManager" row-count="8" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1004" height="619"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <vspacer id="e170a">
+        <constraints>
+          <grid row="1" column="5" row-span="4" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="c2617" class="javax.swing.JRadioButton" binding="cardRadioButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-592917"/>
+          <font name="Heavitas" size="40" style="0"/>
+          <selected value="true"/>
+          <text value="Card"/>
+        </properties>
+      </component>
+      <hspacer id="ea9a8">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="4f68f" class="javax.swing.JRadioButton" binding="cashCheckRadioButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-592917"/>
+          <font name="Heavitas" size="40" style="0"/>
+          <text value="Cash / Check"/>
+        </properties>
+      </component>
+      <grid id="1b403" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="3" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-592917"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="3fdc1" class="javax.swing.JRadioButton" binding="cashDelivery">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="false"/>
+              <background color="-592917"/>
+              <enabled value="false"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <text value="Delivery"/>
+            </properties>
+          </component>
+          <component id="3164" class="javax.swing.JRadioButton" binding="cashPickup">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-592917"/>
+              <enabled value="false"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <text value="Pickup"/>
+            </properties>
+          </component>
+          <component id="90500" class="javax.swing.JTextField" binding="cashAddress1">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Heavitas" size="22" style="0"/>
+              <text value="Address line 1"/>
+            </properties>
+          </component>
+          <component id="b9a30" class="javax.swing.JTextField" binding="cashAddress2">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Heavitas" size="22" style="0"/>
+              <text value="address line 2"/>
+            </properties>
+          </component>
+          <component id="9a6c4" class="javax.swing.JTextField" binding="payAtTheShopTextField2" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-592917"/>
+              <editable value="false"/>
+              <enabled value="false"/>
+              <focusable value="false"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <opaque value="true"/>
+              <text value="-- Pay at the shop"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="cdcad" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="3" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-592917"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c4ab6" class="javax.swing.JRadioButton" binding="cardDelivery">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-592917"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <text value="Delivery"/>
+            </properties>
+          </component>
+          <component id="9d85d" class="javax.swing.JRadioButton" binding="cardPickup">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-592917"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <text value="Pickup"/>
+            </properties>
+          </component>
+          <component id="a86c0" class="javax.swing.JTextField" binding="cardAddress1">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Heavitas" size="22" style="0"/>
+              <name value="Address Line 1"/>
+              <text value="Address line 1"/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="fbc73" class="javax.swing.JTextField" binding="payAtTheShopTextField" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-592917"/>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <focusable value="false"/>
+              <font name="Heavitas" size="26" style="0"/>
+              <text value="-- Pay at the shop"/>
+            </properties>
+          </component>
+          <component id="e0237" class="javax.swing.JTextField" binding="cardAddress2">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Heavitas" size="22" style="0"/>
+              <text value="address line 2"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="b1d50" class="javax.swing.JButton" binding="backButton">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <icon value="backButton.png"/>
+          <name value="Back to Order"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="1b9e1" class="javax.swing.JButton" binding="placeButton">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <icon value="placeButton.png"/>
+          <opaque value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="845bf" class="javax.swing.JTextField" binding="total$TextField" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="150"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-592917"/>
+          <editable value="false"/>
+          <enabled value="true"/>
+          <focusable value="false"/>
+          <font name="Heavitas" size="72" style="0"/>
+          <inheritsPopupMenu value="false"/>
+          <margin top="2" left="6" bottom="2" right="6"/>
+          <text value="Total: $"/>
+        </properties>
+      </component>
+      <component id="803c1" class="javax.swing.JTextField" binding="cardNumber">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Heavitas" size="22"/>
+          <text value="Card number"/>
+        </properties>
+      </component>
+      <component id="1b4ac" class="javax.swing.JTextField" binding="cardCVV">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Heavitas" size="22"/>
+          <text value="3-digit CVV"/>
+        </properties>
+      </component>
+      <component id="fca61" class="javax.swing.JTextField" binding="cardExpDate">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Heavitas" size="22"/>
+          <text value="expiration date"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="cardMethod" bound="true">
+      <member id="c4ab6"/>
+      <member id="9d85d"/>
+    </group>
+    <group name="cashMethod" bound="true">
+      <member id="3fdc1"/>
+      <member id="3164"/>
+    </group>
+    <group name="cashOrCard" bound="true">
+      <member id="4f68f"/>
+      <member id="c2617"/>
+    </group>
+  </buttonGroups>
+</form>
