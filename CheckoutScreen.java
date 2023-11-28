@@ -147,5 +147,8 @@ public class CheckoutScreen extends JFrame {
     }
     public static void main(String[] args) {
         new CheckoutScreen();
+        //SwingUtilities.invokeLater(ReceiptScreen::main);
+        // ^ should be something like that where main creates a new ReceiptScreen(). probably.
+        // u might have to change main to its own unique method like showGUI or smth like that
     }
 }
