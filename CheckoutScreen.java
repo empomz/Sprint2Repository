@@ -9,8 +9,10 @@ public class CheckoutScreen extends JFrame {
     String cardDigits = "";
     String cdAddress1 = "";
     String cdAddress2 = "";
+    // ^^ Card addresses
     String ccAddress1 = "";
     String ccAddress2 = "";
+    // ^^ Cash/check addresses
     private JTextField total$TextField;
     private JRadioButton cardRadioButton;
     private JRadioButton cashCheckRadioButton;
@@ -25,8 +27,8 @@ public class CheckoutScreen extends JFrame {
     private JTextField cashAddress1;
     private JTextField cashAddress2;
     private JTextField payAtTheShopTextField2;
-    private JButton button1;
-    private JButton button2;
+    private JButton placeButton;
+    private JButton backButton;
     private JTextField cardNumber;
     private JTextField cardCVV;
     private JTextField cardExpDate;
@@ -44,7 +46,7 @@ public class CheckoutScreen extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
 
-
+        // Disable fields for cash when card is selected
         cardRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -65,6 +67,8 @@ public class CheckoutScreen extends JFrame {
                 }
             }
         });
+
+        // Disable fields for card when cash is selected
         cashCheckRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -126,6 +130,18 @@ public class CheckoutScreen extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ccAddress2 = cashAddress2.getText();
+            }
+        });
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // empty right now -- should go back to order when everything is connected
+            }
+        });
+        placeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //empty right now -- should open confirmation/receipt screen when everything is connected
             }
         });
     }
