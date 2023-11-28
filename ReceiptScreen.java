@@ -11,7 +11,9 @@ public class ReceiptScreen extends JFrame {
     private JTextField placingAnOrderTextField;
     private JTextPane momAndPopSTextPane;
     private JTextPane a830PolytechnicLaneSuiteTextPane;
-    private JTextPane textPane1;
+    private JTextPane itemsList;
+    private JTextPane totalsList;
+    private JTextPane testTextPane;
 
     /*
     StringBuilder text = new StringBuilder("<html>");
@@ -51,6 +53,19 @@ public class ReceiptScreen extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    public static void setOrderItems() {
+        //no clue if this will work. lol
+    }
+
+    private static void setAndShowItems() {
+        //itemsList.setText()
+    }
+
+    private static void setAndShowTotals() {
+        //totalsList.setText()
+    }
+
     public static void main(String[] args) {
         new ReceiptScreen();
     }
