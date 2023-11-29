@@ -1,17 +1,19 @@
 import javax.swing.*;
-import java.awt.Color;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 public class CheckoutScreen extends JFrame {
-    String cardNum = "";
-    String cardExp = "";
-    String cardDigits = "";
+    public static String cardNum = "";
+    public static String cardExp = "";
+    public static String cardDigits = "";
     String cdAddress1 = "";
     String cdAddress2 = "";
     // ^^ Card addresses
     String ccAddress1 = "";
     String ccAddress2 = "";
+    public static boolean isCard = true;
     // ^^ Cash/check addresses
     private JTextField total$TextField;
     private JRadioButton cardRadioButton;
@@ -46,11 +48,15 @@ public class CheckoutScreen extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
 
+        // List<OrderItem> orderItems = setOrderItems();
+        // setAndShowItems(orderItems);
+
         // Disable fields for cash when card is selected
         cardRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(cardRadioButton.isSelected()) {
+                    isCard = true;
                     cardDelivery.setEnabled(true);
                     cardAddress1.setEnabled(true);
                     cardAddress2.setEnabled(true);
@@ -73,6 +79,7 @@ public class CheckoutScreen extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(cashCheckRadioButton.isSelected()) {
+                    isCard = false;
                     cashDelivery.setEnabled(true);
                     cashAddress1.setEnabled(true);
                     cashAddress2.setEnabled(true);
@@ -145,10 +152,27 @@ public class CheckoutScreen extends JFrame {
             }
         });
     }
+
+    public static void setOrderItems() {
+        // no clue if smth like this will work to get the items + prices
+    }
+
+
+    public static void setAndShowItems(List<OrderItem> orderItems) {
+        StringBuilder totals = new StringBuilder("<html>");
+        double total = 0.0;
+
+        for(OrderItem item : orderItems){
+            total += item.getPrice();
+        }
+        totals.append("Total: $").append(total);
+        total$TextField.setText(totals.toString());
+    }
+
+
     public static void main(String[] args) {
         new CheckoutScreen();
-        //SwingUtilities.invokeLater(ReceiptScreen::main);
-        // ^ should be something like that where main creates a new ReceiptScreen(). probably.
-        // u might have to change main to its own unique method like showGUI or smth like that
+        SwingUtilities.invokeLater(ReceiptScreen::openGUI);
+        // ^ should be something like that. probably.
     }
 }
