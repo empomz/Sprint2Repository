@@ -38,7 +38,7 @@ public class ReceiptScreen extends JFrame {
     }
 
     public static void setOrderItems() {
-        // no clue if smth like this will work to get the items + prices
+        //
     }
 
     // To display the list of items on the receipt + their prices. Code taken from miina's

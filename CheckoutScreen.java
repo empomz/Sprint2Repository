@@ -48,8 +48,8 @@ public class CheckoutScreen extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
 
-        // List<OrderItem> orderItems = setOrderItems();
-        // setAndShowItems(orderItems);
+        List<OrderItem> orderItems = setOrderItems();
+        setAndShowTotal(orderItems);
 
         // Disable fields for cash when card is selected
         cardRadioButton.addActionListener(new ActionListener() {
@@ -154,11 +154,11 @@ public class CheckoutScreen extends JFrame {
     }
 
     public static void setOrderItems() {
-        // no clue if smth like this will work to get the items + prices
+        //
     }
 
 
-    public static void setAndShowItems(List<OrderItem> orderItems) {
+    public static void setAndShowTotal(List<OrderItem> orderItems) {
         StringBuilder totals = new StringBuilder("<html>");
         double total = 0.0;
 
